@@ -2,23 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Introduce the Lantern Festival"
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <title>MP2 Starter</title>
+  <title>The Lantern Festival</title>
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="./foundation6_lib/css/foundation.css">
+  <!--link rel="stylesheet" href="./foundation6_lib/css/foundation.css"-->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-  <nav class="top-bar">
-    <div class="top-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="menu-text">MP2</li>
-        <li><a href="https://courses.engr.illinois.edu/cs498rk1/">Web Page</a></li>
-      </ul>
+<!-- header -->
+  <header>
+    <div class="title-bar" data-responsive-toggle="responsive-topbar" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle></button>
+      <div class="title-bar-title">Menu</div>
     </div>
-  </nav>
+
+    <div class="top-bar show-for-small-only" id="responsive-topbar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text">Site Title</li>
+        </ul>
+      </div>
+
+      <div class="top-bar-right">
+        <ul class="dropdown menu vertical medium-horizontal" data-dropdown-menu>
+          <li class="has-submenu">
+            <a href="#">One</a>
+            <ul class="submenu menu vertical" data-submenu>
+              <li><a href="#">One</a></li>
+              <li><a href="#">Two</a></li>
+              <li><a href="#">Three</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Two</a></li>
+          <li><a href="#">Three</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="show-for-medium" data-sticky-container>
+      <div class="top-bar" data-sticky data-options="marginTop:0;" id="nonresponsive-topbar">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li class="menu-text">Site Title</li>
+          </ul>
+        </div>
+
+        <div class="top-bar-right">
+          <ul class="dropdown menu vertical medium-horizontal" data-dropdown-menu>
+            <li class="has-submenu">
+              <a href="#">One</a>
+              <ul class="submenu menu vertical" data-submenu>
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+<!-- header -->
+
+<!-- introduction -->
+  <section id="part0" class="row">
+    <div class="row text-center">
+      <div class="columns small-12" style="padding: 2em;">
+        <h1> The Lantern Festival </h1>
+        <h3> first significant feast after Spring Festival </h3>
+      </div>
+        <div class="columns small-12 medium-6">
+          <a href="#" class="button" id="left"> View Celebrations </a>
+        </div>
+        <div class="columns small-12 medium-6">
+          <a href="#" class="button" id="right"> Organize an Event </a>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+<!-- introduction -->
+
 	<div class="row text-center">
 		<h3>Hello. It's Me.</h3>
 	</div>

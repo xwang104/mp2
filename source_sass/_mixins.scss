@@ -1,1 +1,17 @@
 // Insert your mixins
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-align() {
+	margin: 0 auto;
+}
+#part0 div {
+	@include vertical-align();
+	@include horizontal-align();
+}
