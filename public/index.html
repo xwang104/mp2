@@ -7,42 +7,50 @@
   <title>The Lantern Festival</title>
 
   <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="./lib/slick-carousel/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./lib/slick-carousel/slick/slick-theme.css"/>
   <!--link rel="stylesheet" href="./foundation6_lib/css/foundation.css"-->
   <link rel="stylesheet" href="./css/styles.css">
+
 </head>
 
 <body>
 <!-- header -->
   <header>
-    <div class="title-bar" data-responsive-toggle="responsive-topbar" data-hide-for="medium">
-      <button class="menu-icon" type="button" data-toggle></button>
-      <div class="title-bar-title">Menu</div>
-    </div>
-
-    <div class="top-bar show-for-small-only" id="responsive-topbar">
-      <div class="top-bar-left">
-        <ul class="menu">
-          <li class="menu-text">Site Title</li>
-        </ul>
+    <div id="mobilenav-wrapper">
+      <div class="title-bar" data-responsive-toggle="responsive-topbar" data-hide-for="large">
+        <button class="menu-icon" type="button" data-toggle></button>
+        <div class="title-bar-title">Menu</div>
       </div>
 
-      <div class="top-bar-right">
-        <ul class="dropdown menu vertical medium-horizontal" data-dropdown-menu>
-          <li class="has-submenu">
-            <a href="#">One</a>
-            <ul class="submenu menu vertical" data-submenu>
-              <li><a href="#">One</a></li>
-              <li><a href="#">Two</a></li>
-              <li><a href="#">Three</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
-        </ul>
+
+      <div class="top-bar hide-for-large" id="responsive-topbar">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li class="menu-text">Site Title</li>
+          </ul>
+        </div>
+
+        <div class="top-bar-right">
+          <ul class="dropdown menu vertical large-horizontal" data-dropdown-menu>
+            <li class="has-submenu">
+              <a href="#">One</a>
+              <ul class="submenu menu vertical" data-submenu>
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <div class="show-for-medium" data-sticky-container>
+
+
+    <div class="show-for-large" data-sticky-container>
       <div class="top-bar" data-sticky data-options="marginTop:0;" id="nonresponsive-topbar">
         <div class="top-bar-left">
           <ul class="menu">
@@ -51,7 +59,7 @@
         </div>
 
         <div class="top-bar-right">
-          <ul class="dropdown menu vertical medium-horizontal" data-dropdown-menu>
+          <ul class="dropdown menu vertical large-horizontal" data-dropdown-menu>
             <li class="has-submenu">
               <a href="#">One</a>
               <ul class="submenu menu vertical" data-submenu>
@@ -74,7 +82,7 @@
 <!-- introduction -->
   <section id="part0" class="row">
     <div class="row text-center">
-      <div class="columns small-12" style="padding: 2em;">
+      <div class="columns small-12" style="margin-bottom: 4%;">
         <h1> The Lantern Festival </h1>
         <h3> first significant feast after Spring Festival </h3>
       </div>
@@ -90,6 +98,112 @@
   </section>
 
 <!-- introduction -->
+
+<!-- about -->
+  <section id="part1" class="row">
+    <div class="row text-center">
+      <div class="columns small-12">
+        <h1> About </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-6 small-centered column" id="divider-1"></div>
+    </div>
+    <div class="row text-center">
+      <div class="small-8 small-centered column">
+        <p> The Lantern Festival is a Chinese festival celebrated on the fifteenth day of the first month in the lunisolar Chinese calendar. It marks the final day of the traditional Chinese New Year celebrations, and usually falls on some day in February or March in the Gregorian calendar. </p>
+        <p>The first month of the lunisolar calendar is called the yuan month, and in olden times night was called xiao in Mandarin. Therefore, the day is called Yuan Xiao（元宵） Festival in China. The fifteenth day is the first full moon of that lunisolar year. </p>
+      </div>
+    </div>
+  </section>
+
+<!-- about -->
+
+<!-- activities using carousel -->
+
+  <section id="part2" style="border-top:4px dashed red;border-bottom: 4px dashed red;">
+    <div class="carousel">
+      <div class="activity" id="activity-1">
+        <h3 style="width:30%;margin-top:10%; margin-left:10%;"> Eating lutinous rice balls called yuanxiao (or tangyuan)</h3>
+      </div>
+      <div class="activity" id="activity-2">
+        <h3 style="width:30%;color: white;margin-top:10%; margin-left:10%;"> Solving riddles on the paper lanterns </h3>
+      </div>
+
+      <div class="activity" id="activity-3">
+        <h3 style="width:30%;color:white;margin-top:10%; margin-left:10%;"> Flying Lanterns</h3>
+      </div>
+
+      <div class="activity" id="activity-4">
+      </div>
+    </div>
+  </section>
+
+<!-- yuanxiao and tangyuan -->
+  <section id="part3">
+    <div class="row text-center">
+      <div class="columns small-12">
+        <h1> Yuanxiao vs. Tangyuan </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-6 small-centered column" id="divider-3"></div>
+    </div>
+    <div class="row text-center">
+      <div class="small-8 small-centered column">
+        <p> Did you EAT typical foods for celebrating the Lantern Festival like Tangyuan(汤圆) and Yuanxiao(元宵)? These are all shape like a ball, and are all white. So many people thought that it's just the same. </p>
+        <p>So do you know the difference between Tangyuan and Yuanxiao? Check the videos below.</p>
+      </div>
+    </div>
+
+    <div class="row" style="padding-top:0;">
+      <div class="columns small-12 large-6">
+        <div class="flex-video">
+            <video controls>
+              <source src="./data/videos/yuanxiao.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+        <p class="notes">
+          Most Northerners eat and make Yuanxiao. Yuanxiao are made by placing balls of filling into a basket filled with glutinous rice flour, and then shaking the basket while sprinking water over it so the flour becomes a coating.
+        </p>
+
+      </div>
+      <div class="columns small-12 large-6">
+        <div class="flex-video">
+            <video controls>
+              <source src="./data/videos/tangyuan.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+        <p class="notes">
+          Most Southerners eat and make Tangyuan. Tangyuan, on the other hand, are made by starting with balls of rice flour dough and inserting the filling into these. In the south, salty fillings are preferred.
+        </p>
+      </div>
+    </div>
+
+    <div class="row" id="purchase" style="height: 500px;">
+      <p>
+        You'll find packets of frozen tang yuan at most Chinese supermarkets, and these days the fillings not only come in the standard assortment, but have branched out into fancy-sounding ones like "sweet osmanthanus" and "chestnut and sesame seed." Why then, take the trouble of making your own at home?
+      </p>
+
+    </div>
+
+
+
+
+  </section>
+
+
+<!-- yuanxiao and tangyuan -->
+
+
+
+
+  
+
+<!-- activities -->
+
 
 	<div class="row text-center">
 		<h3>Hello. It's Me.</h3>
@@ -107,10 +221,31 @@
     </div>
   </section>
 
+    <section class="row">
+    <div class="alert columns small-12 large-6">
+      <div class="text-center"><img src="http://lorempixel.com/400/200/cats"/></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
+      </p>
+    </div>
+    <div class="columns small-12 large-6">
+      <div class="text-center"><img src="http://lorempixel.com/400/200/nature"/></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!
+      </p>
+    </div>
+  </section>
+
   <!-- Scripts -->
   
   <script src="./lib/jquery-2.1.3.min/index.js"></script>
   <script src="./foundation6_lib/js/foundation.min.js"></script>
+
+  <!--script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script-->
+  <!--script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script-->
+  <script type="text/javascript" src="./lib/slick-carousel/slick/slick.min.js"></script>
+        
+
+
+
   <script src="./js/script.js"></script>
   <script>
     $(document).foundation();
