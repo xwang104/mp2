@@ -40,7 +40,7 @@ var part2 = $('#part2'),
 $(document).ready(function() {
     part0.css('height', imgRatio*part0Width);
     part2.css('height', carouselRatio*part2Width);
-    console.log(activityRatio*acWidth);
+    //console.log(activityRatio*acWidth);
     $('.activity').css('height', activityRatio*acWidth);
 });
 
@@ -50,8 +50,8 @@ $(window).resize(function() {
 	part2Width = part2.width();
 	part2.css('height', carouselRatio*part2Width);
 	acWidth = part2Width*0.9;
-	console.log(activityRatio + ", " + acWidth);
-	console.log(activityRatio*acWidth);
+	//console.log(activityRatio + ", " + acWidth);
+	//console.log(activityRatio*acWidth);
     $('.activity').css('height', activityRatio*acWidth);
 });
 
@@ -64,3 +64,24 @@ $(document).ready(function(){
   	autoplaySpeed: 4000
   });
 });
+
+//-----------------
+
+$('#submit').click(function() {
+	$('#bar-1').animate({width:"66%"});
+	$('#bar-2').animate({width:"80%"});
+	$('#bar-3').animate({width:"40%"});
+	$('#bar-4').animate({width:"14%"});
+})
+
+
+//-----------
+
+
+
+
+
+
+
+
+

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Introduce the Lantern Festival"
+  <meta name="description" content="Introduce the Lantern Festival">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>The Lantern Festival</title>
 
@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="./lib/slick-carousel/slick/slick-theme.css"/>
   <!--link rel="stylesheet" href="./foundation6_lib/css/foundation.css"-->
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
 
@@ -32,17 +33,12 @@
         </div>
 
         <div class="top-bar-right">
-          <ul class="dropdown menu vertical large-horizontal" data-dropdown-menu>
-            <li class="has-submenu">
-              <a href="#">One</a>
-              <ul class="submenu menu vertical" data-submenu>
-                <li><a href="#">One</a></li>
-                <li><a href="#">Two</a></li>
-                <li><a href="#">Three</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Three</a></li>
+          <ul class="vertical menu" data-magellan>
+            <li><a href="#part0">Home</a></li>
+            <li><a href="#part1">About</a></li>
+            <li><a href="#part2">Custom</a></li>
+            <li><a href="#part3">Interesing</a></li>
+            <li><a href="#part4"> More</a></li>
           </ul>
         </div>
       </div>
@@ -59,17 +55,13 @@
         </div>
 
         <div class="top-bar-right">
-          <ul class="dropdown menu vertical large-horizontal" data-dropdown-menu>
-            <li class="has-submenu">
-              <a href="#">One</a>
-              <ul class="submenu menu vertical" data-submenu>
-                <li><a href="#">One</a></li>
-                <li><a href="#">Two</a></li>
-                <li><a href="#">Three</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Three</a></li>
+          <!--ul class="dropdown menu vertical large-horizontal" data-magellan data-dropdown-menu-->
+          <ul class="horizontal menu" data-magellan>
+            <li><a href="#part0">Home</a></li>
+            <li><a href="#part1">About</a></li>
+            <li><a href="#part2">Custom</a></li>
+            <li><a href="#part3">Interesing</a></li>
+            <li><a href="#part4"> More</a></li>
           </ul>
         </div>
       </div>
@@ -79,8 +71,10 @@
 
 <!-- header -->
 
+<div class="sections">
+
 <!-- introduction -->
-  <section id="part0" class="row">
+  <section id="part0" class="row" data-magellan-target="part1">
     <div class="row text-center">
       <div class="columns small-12" style="margin-bottom: 4%;">
         <h1> The Lantern Festival </h1>
@@ -100,7 +94,7 @@
 <!-- introduction -->
 
 <!-- about -->
-  <section id="part1" class="row">
+  <section id="part1" class="row" data-magellan-target="part1">
     <div class="row text-center">
       <div class="columns small-12">
         <h1> About </h1>
@@ -121,7 +115,7 @@
 
 <!-- activities using carousel -->
 
-  <section id="part2" style="border-top:4px dashed red;border-bottom: 4px dashed red;">
+  <section id="part2" style="border-top:4px dashed red;border-bottom: 4px dashed red;" data-magellan-target="part2">
     <div class="carousel">
       <div class="activity" id="activity-1">
         <h3 style="width:30%;margin-top:10%; margin-left:10%;"> Eating lutinous rice balls called yuanxiao (or tangyuan)</h3>
@@ -138,9 +132,10 @@
       </div>
     </div>
   </section>
+<!-- activities -->
 
 <!-- yuanxiao and tangyuan -->
-  <section id="part3">
+  <section id="part3" data-magellan-target="part3">
     <div class="row text-center">
       <div class="columns small-12">
         <h1> Yuanxiao vs. Tangyuan </h1>
@@ -151,12 +146,12 @@
     </div>
     <div class="row text-center">
       <div class="small-8 small-centered column">
-        <p> Did you EAT typical foods for celebrating the Lantern Festival like Tangyuan(汤圆) and Yuanxiao(元宵)? These are all shape like a ball, and are all white. So many people thought that it's just the same. </p>
+        <p> Do you EAT typical food for celebrating the Lantern Festival like Tangyuan(汤圆) and Yuanxiao(元宵)? These are all shape like a ball, and are all white. So many people thought that it's just the same. </p>
         <p>So do you know the difference between Tangyuan and Yuanxiao? Check the videos below.</p>
       </div>
     </div>
 
-    <div class="row" style="padding-top:0;">
+    <div class="row" style="padding:0;">
       <div class="columns small-12 large-6">
         <div class="flex-video">
             <video controls>
@@ -182,62 +177,191 @@
       </div>
     </div>
 
-    <div class="row" id="purchase" style="height: 500px;">
-      <p>
-        You'll find packets of frozen tang yuan at most Chinese supermarkets, and these days the fillings not only come in the standard assortment, but have branched out into fancy-sounding ones like "sweet osmanthanus" and "chestnut and sesame seed." Why then, take the trouble of making your own at home?
-      </p>
+    <div class="row text-center" id="modal">
+      <p><a class="button" data-open="exampleModal2"> Which one do you prefer? Click to Vote! </a></p>
+      <!-- This is the first modal -->
+      <div class="reveal row" id="exampleModal2" data-reveal>
+        <form action="">
+          <legend style="margin:0 auto;">Pick One</legend><br>
+          <input type="radio" name="preference" value="Yuanxiao" id="choice_1"><label for="choice_1">Yuanxiao</label><br>
+          <input type="radio" name="preference" value="Tangyuan" id="choice_2"><label for="choice_2">Tangyuan</label><br>
+          <input type="radio" name="preference" value="Both" id="choice_3"><label for="choice_3">Both</label><br>
+          <input type="radio" name="preference" value="Neither" id="choice_4"><label for="choice_4">Neither</label><br>
+        </form>
+        <a class="button" data-open="exampleModal3" id="submit">Submit</a>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
 
+      <!-- This is the nested modal -->
+      <div class="reveal" id="exampleModal3" data-reveal>
+
+        <h3> Results</h3>
+        <p>(Pretending that I have a back end) </p>
+
+        <div class="row">
+          <div class="small-2 columns">
+            <p>Yuanxiao</p>
+            <p>Tangyuan</p>
+            <p>Both</p>
+            <p>None</p>
+          </div>
+          <div class="small-10 columns" style="margin-top:9px;">
+            <div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+              <span id="bar-1" class="progress-meter">
+                <p class="progress-meter-text">33</p>
+              </span>
+            </div>
+            <div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+              <span id="bar-2" class="progress-meter">
+                <p class="progress-meter-text">40</p>
+              </span>
+            </div>
+            <div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+              <span id="bar-3" class="progress-meter">
+                <p class="progress-meter-text">20</p>
+              </span>
+            </div>
+            <div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
+              <span id="bar-4" class="progress-meter">
+                <p class="progress-meter-text">7</p>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
     </div>
 
 
 
+    <div class="row" id="together">
+      <div style="padding-bottom:16%;">
+        <img src="./data/pics/tuanyuan.png" alt="Family Togetherness">
+        <div class="small-6 small-offset-1 hide-for-small-only">
+          <p> Yuanxiao (tangyuan) is usually eaten together with family. The round shape of the balls and the bowls where they are served, come to symbolise the family togetherness. </p>
+          <p> This is my 6th Lantern Festival not being together with my family. I miss them very much. </p>
+        </div>
+      <div>
 
+    </div>
   </section>
 
 
 <!-- yuanxiao and tangyuan -->
 
+<!-- festivals -->
+  <section id="part4" data-magellan-target="part4">
+
+    <div class="row text-center">
+      <div class="columns small-12">
+        <h1> Happy Holidays all around the Year </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-6 small-centered column" id="divider-4"></div>
+    </div>
+    <div class="row">
+
+      <div class="large-3 columns text-center">
+        <h4> Spring </h4>
+        <div class="row text-center">
+          <div class="large-12 small-6 columns">
+            <div class="circle" id="f-1">
+            </div>
+            <p>Spring Festival</p>
+          </div>
+          <div class="large-12 small-6 columns">
+            <div class="circle" id="g-1">
+            </div>
+            <p> Valentine's Day</p>
+          </div>
+        </div>
+      </div>
 
 
+      <div class="large-3 columns text-center">
+        <h4> Summer </h4>
+        <div class="row text-center">
+          <div class="large-12 small-6 columns">
+            <div class="circle" id="f-2">
+            </div>
+            <p> Gragon Boat Festival</p>
+          </div>
+          <div class="large-12 small-6 columns">
+            <div class="circle" id="g-2">
+            </div>
+            <p>Easter </p>
+          </div>
+        </div>
+      </div>
 
+      <div class="large-3 columns text-center">
+        <h4> Fall </h4>
+        <div class="row text-center">
+          <div class="large-12 small-6 columns">
+            <div class="circle" id="f-3">
+            </div>
+            <p> Mid-Autumn Festival </p>
+          </div>
+          <div class="large-12 small-6 columns">
+            <div class="circle" id="g-3">
+            </div>
+            <p> Thanksgiving </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="large-3 columns text-center">
+        <h4> Winter </h4>
+        <div class="row text-center">
+          <div class="large-12 small-6 columns">
+            <div class="circle" id="f-4">
+            </div>
+            <p> Laba Festival </p>
+          </div>
+          <div class="large-12 small-6 columns">
+            <div class="circle" id="g-4">
+            </div>
+            <p> Christmas </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+<!-- festivals -->
+
+</div>
+
+  <footer>
+    <div>
+      <i class="fa fa-facebook-official fa-3x"></i>
+      <i class="fa fa-twitter-square fa-3x"></i>
+      <i class="fa fa-linkedin-square fa-3x"></i>
+      <i class="fa fa-google-plus-square fa-3x"></i>
+
+    </div>
+    <div>
+      Copyright © Xiaoxiao Wang
+    </div>
   
+  </footer>
 
-<!-- activities -->
 
 
-	<div class="row text-center">
-		<h3>Hello. It's Me.</h3>
-	</div>
-	<section class="row">
-		<div class="alert columns small-12 large-6">
-			<div class="text-center"><img src="http://lorempixel.com/400/200/cats"/></div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
-      </p>
-    </div>
-		<div class="columns small-12 large-6">
-	  	<div class="text-center"><img src="http://lorempixel.com/400/200/nature"/></div>
-	  	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!
-      </p>
-    </div>
-  </section>
 
-    <section class="row">
-    <div class="alert columns small-12 large-6">
-      <div class="text-center"><img src="http://lorempixel.com/400/200/cats"/></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
-      </p>
-    </div>
-    <div class="columns small-12 large-6">
-      <div class="text-center"><img src="http://lorempixel.com/400/200/nature"/></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!
-      </p>
-    </div>
-  </section>
 
   <!-- Scripts -->
   
   <script src="./lib/jquery-2.1.3.min/index.js"></script>
   <script src="./foundation6_lib/js/foundation.min.js"></script>
+  <!--script src="./foundation6_lib/js/foundation/foundation.core.js"></script--> 
 
   <!--script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script-->
   <!--script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script-->
