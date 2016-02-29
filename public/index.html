@@ -13,6 +13,24 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
+  <link rel="apple-touch-icon" sizes="57x57" href="./data/pics/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./data/pics/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./data/pics/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./data/pics/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./data/pics/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./data/pics/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./data/pics/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./data/pics/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./data/pics/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./data/pics/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./data/pics/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./data/pics/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./data/pics/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./data/pics/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./data/pics/favicon//ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
@@ -28,7 +46,7 @@
       <div class="top-bar hide-for-large" id="responsive-topbar">
         <div class="top-bar-left">
           <ul class="menu">
-            <li class="menu-text">Site Title</li>
+            <li class="menu-text">Celebrating the Lantern Festival</li>
           </ul>
         </div>
 
@@ -49,8 +67,9 @@
     <div class="show-for-large" data-sticky-container>
       <div class="top-bar" data-sticky data-options="marginTop:0;" id="nonresponsive-topbar">
         <div class="top-bar-left">
-          <ul class="menu">
-            <li class="menu-text">Site Title</li>
+          <ul class="horizontal menu">
+            <li><img id="title" src="./data/pics/title.png" alt="Lantern"></li>
+            <!--li class="menu-text"> Lantern Festival</li-->
           </ul>
         </div>
 
@@ -77,14 +96,14 @@
   <section id="part0" class="row" data-magellan-target="part1">
     <div class="row text-center">
       <div class="columns small-12" style="margin-bottom: 4%;">
-        <h1> The Lantern Festival </h1>
-        <h3> first significant feast after Spring Festival </h3>
+        <h1> The Upcoming Lantern Festival </h1>
+        <h3> Join Us on Feb. 22, 2016</h3>
       </div>
         <div class="columns small-12 medium-6">
-          <a href="#" class="button" id="left"> View Celebrations </a>
+          <a href="https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=the+lantern+festival&tbm=nws" class="button" id="left"> View celebrations </a>
         </div>
         <div class="columns small-12 medium-6">
-          <a href="#" class="button" id="right"> Organize an Event </a>
+          <a href="http://www.thelanternfest.com/" class="button" id="right"> Purchase Lanterns </a>
         </div>
       </div>
     </div>
@@ -115,20 +134,22 @@
 
 <!-- activities using carousel -->
 
-  <section id="part2" style="border-top:4px dashed red;border-bottom: 4px dashed red;" data-magellan-target="part2">
+  <section id="part2" data-magellan-target="part2">
     <div class="carousel">
       <div class="activity" id="activity-1">
-        <h3 style="width:30%;margin-top:10%; margin-left:10%;"> Eating lutinous rice balls called yuanxiao (or tangyuan)</h3>
+        <h3 style="margin-top:10%; margin-left:10%;"> Eating lutinous rice balls</h3>
       </div>
       <div class="activity" id="activity-2">
-        <h3 style="width:30%;color: white;margin-top:10%; margin-left:10%;"> Solving riddles on the paper lanterns </h3>
+        <h3 id="vertical"> Solving riddles on the paper lanterns </h3>
       </div>
 
       <div class="activity" id="activity-3">
-        <h3 style="width:30%;color:white;margin-top:10%; margin-left:10%;"> Flying Lanterns</h3>
+        <h3 style="margin-top:10%; margin-left:65%;"> Flying Lanterns</h3>
       </div>
 
       <div class="activity" id="activity-4">
+        <h3 style="margin-top:10%; margin-left:66%;"> Finding Love </h3>
+        <p class="hide-for-small-only"> In the early days, young people were chaperoned in the streets in hopes of finding love. Matchmakers acted busily in hopes of pairing couples. The brightest lanterns were symbolic of good luck and hope. Thus it is the Chinese equivalent of Valentine's Day. </p>
       </div>
     </div>
   </section>
@@ -146,13 +167,13 @@
     </div>
     <div class="row text-center">
       <div class="small-8 small-centered column">
-        <p> Do you EAT typical food for celebrating the Lantern Festival like Tangyuan(汤圆) and Yuanxiao(元宵)? These are all shape like a ball, and are all white. So many people thought that it's just the same. </p>
+        <p> Do you EAT typical food for celebrating the Lantern Festival like Tangyuan (汤圆) and Yuanxiao (元宵)? They are all white balls made with sticky rice flour. Therefore many people thought that they are just the same. </p>
         <p>So do you know the difference between Tangyuan and Yuanxiao? Check the videos below.</p>
       </div>
     </div>
 
     <div class="row" style="padding:0;">
-      <div class="columns small-12 large-6">
+      <div class="columns small-12 large-6" id="video-1">
         <div class="flex-video">
             <video controls>
               <source src="./data/videos/yuanxiao.mp4" type="video/mp4">
@@ -164,7 +185,7 @@
         </p>
 
       </div>
-      <div class="columns small-12 large-6">
+      <div class="columns small-12 large-6" id="video-2">
         <div class="flex-video">
             <video controls>
               <source src="./data/videos/tangyuan.mp4" type="video/mp4">
@@ -172,23 +193,23 @@
             </video>
         </div>
         <p class="notes">
-          Most Southerners eat and make Tangyuan. Tangyuan, on the other hand, are made by starting with balls of rice flour dough and inserting the filling into these. In the south, salty fillings are preferred.
+          Most Southerners eat and make Tangyuan. Tangyuan, on the other hand, are made by starting with balls of rice flour dough and inserting the filling into these as making dumplings. In the south, salty fillings are preferred.
         </p>
       </div>
     </div>
 
     <div class="row text-center" id="modal">
-      <p><a class="button" data-open="exampleModal2"> Which one do you prefer? Click to Vote! </a></p>
+      <p><a class="button" data-open="exampleModal2" id="vote"> Which one do you prefer? Click to Vote! </a></p>
       <!-- This is the first modal -->
       <div class="reveal row" id="exampleModal2" data-reveal>
-        <form action="">
+        <form action="" class="small-6 columns small-centered text-left">
           <legend style="margin:0 auto;">Pick One</legend><br>
           <input type="radio" name="preference" value="Yuanxiao" id="choice_1"><label for="choice_1">Yuanxiao</label><br>
           <input type="radio" name="preference" value="Tangyuan" id="choice_2"><label for="choice_2">Tangyuan</label><br>
           <input type="radio" name="preference" value="Both" id="choice_3"><label for="choice_3">Both</label><br>
           <input type="radio" name="preference" value="Neither" id="choice_4"><label for="choice_4">Neither</label><br>
         </form>
-        <a class="button" data-open="exampleModal3" id="submit">Submit</a>
+        <a class="button" data-open="exampleModal3" id="submit">Submit to see results</a>
         <button class="close-button" data-close aria-label="Close reveal" type="button">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -200,14 +221,14 @@
         <h3> Results</h3>
         <p>(Pretending that I have a back end) </p>
 
-        <div class="row">
+        <div class="row" id="results">
           <div class="small-2 columns">
             <p>Yuanxiao</p>
             <p>Tangyuan</p>
             <p>Both</p>
             <p>None</p>
           </div>
-          <div class="small-10 columns" style="margin-top:9px;">
+          <div class="small-9 columns" style="margin-top:9px;">
             <div class="progress" role="progressbar" tabindex="0" aria-valuenow="20" aria-valuemin="0" aria-valuetext="25 percent" aria-valuemax="100">
               <span id="bar-1" class="progress-meter">
                 <p class="progress-meter-text">33</p>

@@ -5,8 +5,10 @@
 
   $('#nonresponsive-topbar').on('sticky.zf.stuckto:top', function(){
   $(this).addClass('shrink');
+  $('#title').show();
 }).on('sticky.zf.unstuckfrom:top', function(){
   $(this).removeClass('shrink');
+  $('#title').hide();
 })
 
 //-----------------------part0 resize with background image-------------------
@@ -21,7 +23,7 @@ var part0 = $('#part0'),
 var part2 = $('#part2'),
     ac = $('#activity-1'),
     carouselWidth = 1280,
-    carouselHeight = 660,
+    carouselHeight = 650,
 
     activityWidth = 1152,
     activityHeight = 650,
@@ -76,7 +78,27 @@ $('#submit').click(function() {
 
 
 //-----------
+var left = $('#left').html()
+var newleft = left + '&#8594';
+$('#left').hover(
+	function() {
+	    $('#left').html(newleft);
+    },
+    function() {
+        $('#left').html(left);
+    }
+);
 
+var right = $('#right').html()
+var newright = right + '&#8594';
+$('#right').hover(
+	function() {
+	    $('#right').html(newright);
+    },
+    function() {
+        $('#right').html(right);
+    }
+);
 
 
 

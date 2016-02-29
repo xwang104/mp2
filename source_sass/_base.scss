@@ -1,9 +1,5 @@
 // Add any custom Sass & CSS here
 
-  .button {
-    background-color: #C61829;
-  }
-
   #mobilenav-wrapper {
     width: 100%; 
     position:  fixed; 
@@ -12,9 +8,15 @@
   }
 
   #responsive-topbar {
-    background: #fff;
+    background: $red-1;
+    li{
+      border-bottom: 1px dotted rgba(255,255,255,0.25);;
+    }
+    a {
+      color: #fff;
+    }
     .active {
-      color: #C61829;
+      color: #000;
     }
   }
 
@@ -25,18 +27,35 @@
     border-bottom: 1px solid rgba(255,255,255,0.25);
     transition: height .25s ease;
     height: 4.5em;
-    .top-bar-right, .top-bar-left {
+    img {
+      display: none;
+      height: 8em; 
+      margin-left: 60px;
+      margin-top: -20px;
+    }
+    .top-bar-right{
       transition: padding-top .25s ease;
       padding-top: 1.4em;
     }
-    .active {
-      color: #fff;
+    a {
+      color: #CACACA;
+      font-size: 1.1em;
+    }
+    a:hover{
+      color: $red-1;
     }
   }
 
   #nonresponsive-topbar.shrink {
-    background: #C61829;
+    background: $red-1;
     height: 3em;
+    a {
+      color: #fff;
+      font-size: 1em;
+    }
+    .active {
+      color: black;
+    }
     .top-bar-right, .top-bar-left {
       padding-top: 0em;
     }
@@ -57,6 +76,22 @@
     }
     @include breakpoint(medium down) {
       margin-top: 42px;
+    }
+
+    h1 {
+      margin-bottom: 3%;
+    }
+    .button {
+      font-size: 1.1em;
+      background: none;
+      border: 2px solid rgba(255,255,255,0.6);
+	  @include breakpoint(small only) {
+	    font-size: 0.6em;
+	  }
+    }
+    .button:hover {
+        background: $red-1;
+        border: 2px solid $red-1;
     }
 
   }
@@ -84,6 +119,25 @@
 
     }
 
+  }
+
+  #part2 {
+    @include breakpoint(medium) {
+	  //border-top:4px dashed red;
+	  //border-bottom: 4px dashed red;
+	}
+	h3 {
+	  width:30%;
+	  color:white;
+	}
+	p {
+	  width: 30%;
+	  margin-left: 63%;
+	  margin-top: 5%;
+	  @include breakpoint(medium down) {
+	    font-size: 0.6em;
+	  }
+	}
   }
 
   .slick-prev, .slick-next {
@@ -166,12 +220,36 @@
       background-size: auto 100%;
 
     }
+    #video-1 {
+      @include breakpoint(medium) {
+        margin-left: -0.4em;
+      }
+    }
+    #video-2 {
+      @include breakpoint(medium) {
+        margin-left: 0.4em;
+      }
+    }
     .notes {
       padding: 3em;
     }
     #modal {
-      padding-top:0;
+      padding-top:5em;
       padding-bottom: 5em;
+      height: 13em;
+      .button {
+        background: $red-2; 
+        font-size: 1.1em;
+      }
+      .button:hover {
+        background: $red-1;
+      }
+      #vote:hover {
+        font-size: 1.2em;
+      }
+      form {
+        padding: 3%;
+      }
     }
 
   }
@@ -200,12 +278,23 @@
     p {
       color: #FEFEFE;
       font-size: 1.2em;
+      text-shadow:5px 5px 5px #0a0a0a;
     }
 
   }
 
+  #results {
+    padding: 5%;
+    padding-left: 8%;
+  }
+
   .progress {
     margin-bottom: 1.5rem;
+    background: none;
+  }
+
+  .progress-meter {
+    background: $red-2;
   }
 
 
@@ -227,6 +316,7 @@
     width: 200px;
     height: 200px;
     margin: 0 auto;
+    cursor: pointer;
     padding-top: 50%;
     border-radius: 50%;
     background-repeat: no-repeat;
@@ -272,13 +362,14 @@
 
 footer {
   margin-top: 8em;
-  background: #C61829;
+  background: $red-1;
   padding: 3em;
   text-align: center;
   div {
     background: none;
     display: block;
     i {
+      cursor: pointer;
       padding:0 10px 10px 10px;
     }
   }

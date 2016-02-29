@@ -11,7 +11,18 @@
 @mixin horizontal-align() {
 	margin: 0 auto;
 }
-#part0 div {
+#part0 div, #vertical {
 	@include vertical-align();
 	@include horizontal-align();
 }
+
+@mixin box-shadow($shadow) {
+          box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;
+      -ms-box-shadow: $shadow;
+}
+
+#video-1, #video-2, #part2 {@include box-shadow($default-box-shadow);}
+
+#exampleModal2, #exampleModal3 {@include box-shadow($default-box-shadow);}
