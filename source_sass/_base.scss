@@ -63,7 +63,7 @@
 
   #part0 {
     width: 100%;
-    //height: 800px;
+    max-height: 900px;
     margin-left: auto;
     margin-right: auto;
     max-width: initial;
@@ -263,7 +263,7 @@
     background-image: url("../data/pics/fixed_background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;    
-    @include breakpoint(medium) {
+    @include breakpoint(large) {
       background-attachment: fixed;
     }
     @include breakpoint(small only) {
