@@ -221,14 +221,18 @@
 
     }
     #video-1 {
-      @include breakpoint(medium) {
+      @include breakpoint(large) {
         margin-left: -0.4em;
       }
     }
     #video-2 {
-      @include breakpoint(medium) {
+      @include breakpoint(large) {
         margin-left: 0.4em;
       }
+      @include breakpoint(medium down) {
+        margin-top: 0.8em;
+      }
+
     }
     .notes {
       padding: 3em;
@@ -247,11 +251,23 @@
       #vote:hover {
         font-size: 1.2em;
       }
+      #vote {
+        animation-name: attention;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+      }
       form {
         padding: 3%;
       }
     }
 
+  }
+
+  @keyframes attention {
+    0% {font-size: 1.1em;}
+    50% {font-size: 1.2em;}
+    100% {font-size: 1.1em}
   }
 
   #together {
@@ -326,6 +342,10 @@
       width: 150px;
       height: 150px;
     }
+  }
+
+  .circle:hover {
+    opacity: 0.4;
   }
 
   #f-1 {
