@@ -40,6 +40,7 @@
     a {
       color: #CACACA;
       font-size: 1.1em;
+      font-weight: 500;
     }
     a:hover{
       color: $red-1;
@@ -83,6 +84,7 @@
     }
     .button {
       font-size: 1.1em;
+      font-weight: 500;
       background: none;
       border: 2px solid rgba(255,255,255,0.6);
 	  @include breakpoint(small only) {
@@ -160,6 +162,7 @@
   }
   
   .slick-dots {
+    margin-left: 0;
     bottom: 0;
   }
 
@@ -169,7 +172,7 @@
   }
 
   .slick-dots li.slick-active button:before {
-	color: pink;
+	color: $red-1;
   }
 
 
@@ -252,6 +255,7 @@
         font-size: 1.2em;
       }
       #vote {
+        font-weight: 500;
         animation-name: attention;
         animation-duration: 4s;
         animation-iteration-count: infinite;
