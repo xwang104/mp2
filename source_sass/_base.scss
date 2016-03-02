@@ -115,7 +115,7 @@
   }
 
   #part1 {
-    padding: 5%;
+    padding: 10% 5% 10% 5%;
     .row {
      padding: 3%;
     }
@@ -218,7 +218,7 @@
   }
 
   #part3 {
-    padding-top: 10%;
+    padding-top: 13%;
     .row {
      padding: 3%;
     }
@@ -292,7 +292,7 @@
       background-attachment: fixed;
     }
     @include breakpoint(small only) {
-      height: 350px;
+      height: 300px;
     }
 
 
