@@ -287,9 +287,10 @@
     max-width: initial;
     background-image: url("../data/pics/fixed_background.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;    
+    background-size: 100%; 
+    background-attachment: fixed;   
     @include breakpoint(large) {
-      background-attachment: fixed;
+      
     }
     @include breakpoint(small only) {
       height: 300px;
