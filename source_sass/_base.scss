@@ -73,6 +73,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto 100%;
+    @include breakpoint(large) {
+      background-size: 100%;
+    }
     color: #fff;
     @include breakpoint(large) {
       margin-top: -4.5em;
@@ -300,6 +303,7 @@
       color: #FEFEFE;
       font-size: 1.2em;
       text-shadow:5px 5px 5px #0a0a0a;
+      max-width: 700px;
     }
 
   }
